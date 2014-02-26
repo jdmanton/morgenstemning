@@ -4,16 +4,16 @@
 \alias{morgenstemning-package}
 \title{morgenstemning}
 \usage{
-morgenstemning(n = 256, minColour = NULL, maxColour = NULL,
+morgenstemning(n = 256, mincolor = NULL, maxcolor = NULL,
   invert = FALSE, gamma = 1.8, alpha = 1)
 }
 \arguments{
-  \item{n}{the number of colours to be in the palette.}
+  \item{n}{the number of colors to be in the palette.}
 
-  \item{minColour}{a colour with which to replace the lower
+  \item{mincolor}{a color with which to replace the lower
   end of the scale.}
 
-  \item{maxColour}{a colour with which to replace the upper
+  \item{maxcolor}{a color with which to replace the upper
   end of the scale.}
 
   \item{invert}{logical indicating whether the palette
@@ -30,20 +30,20 @@ specification in graphics functions or in \code{par}.
 \description{
 morgenstemning
 
-Create a colourblind-safe vector of \code{n} contiguous
-colours.
+Create a colorblind-safe vector of \code{n} contiguous
+colors.
 }
 \details{
-The colourmap increases linearly in lightness (such as a
+The colormap increases linearly in lightness (such as a
 pure black to white map) but incorporates additional colors
 that help to emphasise the transitions and hence enhance
 the perception of the data. It is designed to be
-printer-friendly both for colour printers and black & white
+printer-friendly both for color printers and black & white
 printers.
 }
 \examples{
 require(graphics)
-# A colour wheel
+# A color wheel
 pie(rep(1,12), col=morgenstemning(12))
 }
 \seealso{

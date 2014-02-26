@@ -1,6 +1,6 @@
 context("morgenstemning")
 
-test_that("output colours are equal to those produced by MATLAB code", {
+test_that("output colors are equal to those produced by MATLAB code", {
   matlabOutput <- matrix(c(0, 0, 0,
                            0.0183, 0.1046, 0.1662,
                            0.0759, 0.1922, 0.3338,
@@ -29,7 +29,7 @@ test_that("invert option inverts correctly", {
 test_that("minColor and maxColor arguments are handled correctly", {
   col.min <- "#FF0000"
   col.max <- "#00FF00"
-  rcols <- morgenstemning(15, minColour=col.min, maxColour=col.max)
+  rcols <- morgenstemning(15, mincolor=col.min, maxcolor=col.max)
   
   expect_equal(rcols[1], col.min)
   expect_equal(rcols[length(rcols)], col.max)

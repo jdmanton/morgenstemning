@@ -1,12 +1,12 @@
-#' Create a colourblind-safe vector of \code{n} contiguous colours.
+#' Create a colorblind-safe vector of \code{n} contiguous colors.
 #' 
-#' @details The colourmap increases linearly in lightness (such as a pure black
+#' @details The colormap increases linearly in lightness (such as a pure black
 #'   to white map) but incorporates additional colors that help to emphasise the
 #'   transitions and hence enhance the perception of the data. It is designed to
-#'   be printer-friendly both for colour printers and black & white printers.
-#' @param n the number of colours to be in the palette.
-#' @param minColour a colour with which to replace the lower end of the scale.
-#' @param maxColour a colour with which to replace the upper end of the scale.
+#'   be printer-friendly both for color printers and black & white printers.
+#' @param n the number of colors to be in the palette.
+#' @param mincolor a color with which to replace the lower end of the scale.
+#' @param maxcolor a color with which to replace the upper end of the scale.
 #' @param invert logical indicating whether the palette should be inverted.
 #' @param alpha the alpha transparency for the palette.
 #' @return A character vector of color names. This can be used either to
@@ -17,9 +17,9 @@
 #' @seealso \code{\link{palettes}} and \code{\link{color}.}
 #' @examples
 #' require(graphics)
-#' # A colour wheel
+#' # A color wheel
 #' pie(rep(1,12), col=morgenstemning(12))
-morgenstemning <- function(n=256, minColour=NULL, maxColour=NULL, invert=FALSE, gamma=1.8, alpha=1) {
+morgenstemning <- function(n=256, mincolor=NULL, maxcolor=NULL, invert=FALSE, gamma=1.8, alpha=1) {
   controlPoints <- matrix(c(
     0, 0, 0,
     25, 53, 95,  	# cyan
@@ -79,17 +79,17 @@ morgenstemning <- function(n=256, minColour=NULL, maxColour=NULL, invert=FALSE, 
   }
   cmap <- apply(cmap.prev, 2, function(y) approx(x=1:n.prev, y, xout=seq(1, n.prev, length.out=n))$y)
   
-  # Flip colourmap if required
+  # Flip colormap if required
   if(invert) cmap <- cmap[dim(cmap)[1]:1, , drop=FALSE]
   
-  # Convert RGB values to hex codes and replace min/max colours
+  # Convert RGB values to hex codes and replace min/max colors
   if(alpha != 1){
-    colours <- rgb(cmap, alpha=alpha)
+    colors <- rgb(cmap, alpha=alpha)
   } else {
-    colours <- rgb(cmap)
+    colors <- rgb(cmap)
   }
-  if(!is.null(minColour)) colours[1] <- minColour
-  if(!is.null(maxColour)) colours[length(colours)] <- maxColour
+  if(!is.null(mincolor)) colors[1] <- mincolor
+  if(!is.null(maxcolor)) colors[length(colors)] <- maxcolor
   
-  colours
+  colors
 }
