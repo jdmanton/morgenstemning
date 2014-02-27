@@ -3,7 +3,7 @@
 \title{Create a colorblind-safe vector of \code{n} quasi-isoluminent colors.}
 \usage{
 ametrine(n = 256, mincolor = NULL, maxcolor = NULL, invert = FALSE,
-  gamma = 1.8, alpha = 1)
+  alpha = 1)
 }
 \arguments{
   \item{n}{the number of colors to be in the palette.}

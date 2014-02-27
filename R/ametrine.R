@@ -21,7 +21,7 @@
 #' require(graphics)
 #' # A color wheel
 #' pie(rep(1,12), col=ametrine(12))
-ametrine <- function(n=256, mincolor=NULL, maxcolor=NULL, invert=FALSE, gamma=1.8, alpha=1) {
+ametrine <- function(n=256, mincolor=NULL, maxcolor=NULL, invert=FALSE, alpha=1) {
   controlPoints <- matrix(c(
     30, 60, 150,  # cyan
     180, 90, 155, # purple
