@@ -6,6 +6,7 @@
 #'   point for those with normal color vision. In order to improve contrast, 
 #'   this colormap is slightly unbalanced in luminence, unlike
 #'   \code{\link{isolum}}.
+#' @param n the number of colors to be in the palette.
 #' @param mincolor a color with which to replace the lower end of the scale.
 #' @param maxcolor a color with which to replace the upper end of the scale.
 #' @param invert logical indicating whether the palette should be inverted.

@@ -6,6 +6,8 @@ ametrine(n = 256, mincolor = NULL, maxcolor = NULL, invert = FALSE,
   gamma = 1.8, alpha = 1)
 }
 \arguments{
+  \item{n}{the number of colors to be in the palette.}
+
   \item{mincolor}{a color with which to replace the lower
   end of the scale.}
 

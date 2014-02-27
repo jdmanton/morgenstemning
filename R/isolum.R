@@ -7,6 +7,7 @@
 #'   a non-linear ramp for those with red-green color perception deficiency. As
 #'   the color map is isoluminent, it will appear as one shade of grey across
 #'   the entire range when printed on a black & white printer.
+#' @param n the number of colors to be in the palette.
 #' @param mincolor a color with which to replace the lower end of the scale.
 #' @param maxcolor a color with which to replace the upper end of the scale.
 #' @param invert logical indicating whether the palette should be inverted.
