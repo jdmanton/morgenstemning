@@ -1,5 +1,5 @@
 Package: morgenstemning
-Title: Colour schemes compatible with red-green colour perception difficulties
+Title: Color schemes compatible with red-green color perception difficulties
 Description: This package is a port of the MATLAB colourmap functions
     accompanying the paper M. Geissbuehler and T. Lasser, "How to display data
     by color schemes compatible with red-green color perception deficiencies,"
