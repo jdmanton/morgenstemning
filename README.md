@@ -1,4 +1,5 @@
 # morgenstemning
+[![Build status](https://travis-ci.org/ajdm/morgenstemning.png)](https://travis-ci.org/ajdm/morgenstemning)
 
 An R package for generating colorblind-safe color palettes. Ported from MATLAB code accompanying the article
 
