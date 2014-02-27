@@ -19,6 +19,10 @@ morgenstemning(n = 256, mincolor = NULL, maxcolor = NULL,
   \item{invert}{logical indicating whether the palette
   should be inverted.}
 
+  \item{gamma}{the exponent to use for each channel when
+  converting to greyscale, such that \code{grey =
+  (red^gamma + green^gamma + blue^gamma) ^ (1/gamma)}.}
+
   \item{alpha}{the alpha transparency for the palette.}
 }
 \value{

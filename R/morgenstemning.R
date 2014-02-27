@@ -8,6 +8,9 @@
 #' @param mincolor a color with which to replace the lower end of the scale.
 #' @param maxcolor a color with which to replace the upper end of the scale.
 #' @param invert logical indicating whether the palette should be inverted.
+#' @param gamma the exponent to use for each channel when converting to
+#'   greyscale, such that \code{grey = (red^gamma + green^gamma +
+#'   blue^gamma) ^ (1/gamma)}.
 #' @param alpha the alpha transparency for the palette.
 #' @return A character vector of color names. This can be used either to
 #'   create a user-defined color palette for subsequent graphics by
