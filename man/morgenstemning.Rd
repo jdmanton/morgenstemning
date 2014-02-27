@@ -1,8 +1,6 @@
-\docType{package}
 \name{morgenstemning}
 \alias{morgenstemning}
-\alias{morgenstemning-package}
-\title{morgenstemning}
+\title{Create a colorblind-safe vector of \code{n} contiguous colors.}
 \usage{
 morgenstemning(n = 256, mincolor = NULL, maxcolor = NULL,
   invert = FALSE, gamma = 1.8, alpha = 1)
@@ -33,8 +31,6 @@ graphics by \code{\link[grDevices]{palette}(cv)}, a
 \code{par}.
 }
 \description{
-morgenstemning
-
 Create a colorblind-safe vector of \code{n} contiguous
 colors.
 }
