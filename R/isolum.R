@@ -1,26 +1,27 @@
 #' Create a colorblind-safe vector of \code{n} isoluminent colors.
 #' 
-#' @details The colormap is isoluminent and perceived by those with a red-green
-#'   color perception deficiency as a linear ramp between blue and yellow.
-#'   However, the colormap has been enriched with a red control point for those
+#' @details The colormap is isoluminent and perceived by those with a red-green 
+#'   color perception deficiency as a linear ramp between blue and yellow. 
+#'   However, the colormap has been enriched with a red control point for those 
 #'   with normal color vision, with the shade carefully chosen to avoid creating
-#'   a non-linear ramp for those with red-green color perception deficiency. As
-#'   the color map is isoluminent, it will appear as one shade of grey across
+#'   a non-linear ramp for those with red-green color perception deficiency. As 
+#'   the color map is isoluminent, it will appear as one shade of grey across 
 #'   the entire range when printed on a black & white printer.
 #' @param n the number of colors to be in the palette.
 #' @param mincolor a color with which to replace the lower end of the scale.
 #' @param maxcolor a color with which to replace the upper end of the scale.
 #' @param invert logical indicating whether the palette should be inverted.
-#' @param gamma the exponent to use for each channel when converting to
-#'   greyscale, such that \code{grey = (red^gamma + green^gamma +
-#'   blue^gamma) ^ (1/gamma)}.
+#' @param gamma the exponent to use for each channel when converting to 
+#'   greyscale, such that \code{grey = (red^gamma + green^gamma + blue^gamma) ^
+#'   (1/gamma)}.
 #' @param alpha the alpha transparency for the palette.
-#' @return A character vector of color names. This can be used either to
-#'   create a user-defined color palette for subsequent graphics by
-#'   \code{\link{palette}(cv)}, a \code{col =} specification in graphics
-#'   functions or in \code{par}.
+#' @return A character vector of color names. This can be used either to create 
+#'   a user-defined color palette for subsequent graphics by 
+#'   \code{\link[grDevices]{palette}(cv)}, a \code{col =} specification in
+#'   graphics functions or in \code{par}.
 #' @export
-#' @seealso \code{\link{palettes}} and \code{\link{color}.}
+#' @seealso \code{\link[grDevices]{palettes}} and
+#'   \code{\link[grDevices]{colors}.}
 #' @examples
 #' require(graphics)
 #' # A color wheel

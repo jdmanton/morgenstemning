@@ -28,8 +28,9 @@ morgenstemning(n = 256, mincolor = NULL, maxcolor = NULL,
 \value{
 A character vector of color names. This can be used either
 to create a user-defined color palette for subsequent
-graphics by \code{\link{palette}(cv)}, a \code{col =}
-specification in graphics functions or in \code{par}.
+graphics by \code{\link[grDevices]{palette}(cv)}, a
+\code{col =} specification in graphics functions or in
+\code{par}.
 }
 \description{
 morgenstemning
@@ -51,6 +52,7 @@ require(graphics)
 pie(rep(1,12), col=morgenstemning(12))
 }
 \seealso{
-\code{\link{palettes}} and \code{\link{color}.}
+\code{\link[grDevices]{palettes}} and
+\code{\link[grDevices]{colors}.}
 }
 

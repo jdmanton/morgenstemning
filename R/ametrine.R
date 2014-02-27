@@ -4,7 +4,7 @@
 #'   red-green color perception deficiency as a roughly linear ramp between blue
 #'   and yellow. However, the colormap has been enriched with a red control 
 #'   point for those with normal color vision. In order to improve contrast, 
-#'   this colormap is slightly unbalanced in luminence, unlike
+#'   this colormap is slightly unbalanced in luminence, unlike 
 #'   \code{\link{isolum}}.
 #' @param n the number of colors to be in the palette.
 #' @param mincolor a color with which to replace the lower end of the scale.
@@ -13,10 +13,11 @@
 #' @param alpha the alpha transparency for the palette.
 #' @return A character vector of color names. This can be used either to create 
 #'   a user-defined color palette for subsequent graphics by 
-#'   \code{\link{palette}(cv)}, a \code{col =} specification in graphics 
-#'   functions or in \code{par}.
+#'   \code{\link[grDevices]{palette}(cv)}, a \code{col =} specification in
+#'   graphics functions or in \code{par}.
 #' @export
-#' @seealso \code{\link{palettes}} and \code{\link{color}.}
+#' @seealso \code{\link[grDevices]{palettes}} and
+#'   \code{\link[grDevices]{colors}.}
 #' @examples
 #' require(graphics)
 #' # A color wheel

@@ -1,6 +1,6 @@
 #' Create a colorblind-safe vector of \code{n} contiguous colors.
 #' 
-#' @details The colormap increases linearly in lightness (such as a pure black
+#' @details The colormap increases linearly in lightness (such as a pure black 
 #'   to white map) but incorporates additional colors that help to emphasise the
 #'   transitions and hence enhance the perception of the data. It is designed to
 #'   be printer-friendly both for color printers and black & white printers.
@@ -8,16 +8,17 @@
 #' @param mincolor a color with which to replace the lower end of the scale.
 #' @param maxcolor a color with which to replace the upper end of the scale.
 #' @param invert logical indicating whether the palette should be inverted.
-#' @param gamma the exponent to use for each channel when converting to
-#'   greyscale, such that \code{grey = (red^gamma + green^gamma +
-#'   blue^gamma) ^ (1/gamma)}.
+#' @param gamma the exponent to use for each channel when converting to 
+#'   greyscale, such that \code{grey = (red^gamma + green^gamma + blue^gamma) ^
+#'   (1/gamma)}.
 #' @param alpha the alpha transparency for the palette.
-#' @return A character vector of color names. This can be used either to
-#'   create a user-defined color palette for subsequent graphics by
-#'   \code{\link{palette}(cv)}, a \code{col =} specification in graphics
-#'   functions or in \code{par}.
+#' @return A character vector of color names. This can be used either to create 
+#'   a user-defined color palette for subsequent graphics by 
+#'   \code{\link[grDevices]{palette}(cv)}, a \code{col =} specification in
+#'   graphics functions or in \code{par}.
 #' @export
-#' @seealso \code{\link{palettes}} and \code{\link{color}.}
+#' @seealso \code{\link[grDevices]{palettes}} and
+#'   \code{\link[grDevices]{colors}.}
 #' @examples
 #' require(graphics)
 #' # A color wheel
